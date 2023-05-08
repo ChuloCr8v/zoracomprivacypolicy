@@ -5,16 +5,11 @@ interface TitleProps {
   titleClassName: string;
 }
 
-interface ButtonProps {
-  setShowPrivacyPolicy: (arg0: boolean) => void;
-  setShowContactForm: (arg0: boolean) => void;
-}
-
 export const PolicyTitle = (props: TitleProps) => {
   return <h2 className={`${props.titleClassName}`}>{props.title}</h2>;
 };
 
-const PrivacyPolicy = (buttonProps: ButtonProps) => {
+const PrivacyPolicy = () => {
   return (
     <div className=" text-justify p-10 max-w-7xl">
       <div className="">
